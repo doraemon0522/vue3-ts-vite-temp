@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "composite": true, //开启编译模式
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "types": ["vite/client"]
+  },
+  "include": ["vite.config.ts", "build/**/*.ts"]
+}
