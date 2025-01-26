@@ -43,5 +43,9 @@
     "vite": "^6.0.5",
     "vue-eslint-parser": "^9.4.3",
     "vue-tsc": "^2.2.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=8.9.2"
   }
 }
