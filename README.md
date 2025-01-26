@@ -7,17 +7,17 @@
 ```
 ### Compiles and hot-reloads for development
 ```js
-  pnpm run dev
+  pnpm dev
 ```
 
 ### Compiles and minifies for production
 ```js
-  pnpm run build
+  pnpm build
 ```
 
 ### Lints and fixes files
 ```js
-  pnpm run lint
+  pnpm lint
 ```
 
 ### Customize configuration
