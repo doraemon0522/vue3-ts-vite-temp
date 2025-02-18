@@ -4,6 +4,7 @@
     "baseUrl": ".", 
     "composite": true,
     "skipLibCheck": true,
+    "lib": ["dom", "esnext"],
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
