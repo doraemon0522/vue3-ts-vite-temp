@@ -1,7 +1,7 @@
 <script setup lang="ts">
   import HelloWorld from './components/HelloWorld.vue';
   import LmButton from './components/LmButton/index.vue';
-  import LmMap from './components/LmMap/index.vue';
+  import LmMap from './components/LmMap/dynamicTianDi.vue';
 </script>
 
 <template>

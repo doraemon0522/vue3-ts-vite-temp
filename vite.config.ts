@@ -22,6 +22,9 @@ export default defineConfig({
     target: 'esnext',
     outDir: 'dist',
   },
+  optimizeDeps: {
+    include: ['leaflet'],
+  },
   server: {
     port: 5260, // 确保与主应用配置的一致
     cors: true,

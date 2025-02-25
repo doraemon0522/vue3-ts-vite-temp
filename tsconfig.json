@@ -29,6 +29,7 @@
     "tsconfig.json",  
     "./types/auto-imports.d.ts",
     "./types/global.d.ts",
+        "./src/components/lmMap/layerJson.json",
   ],
   "exclude": ["node_modules", "dist", "**/*.js"],
   "references": [
