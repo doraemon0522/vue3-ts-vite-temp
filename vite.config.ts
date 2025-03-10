@@ -2,12 +2,15 @@ import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import federation from '@originjs/vite-plugin-federation';
 import { AutoImportDeps } from './build/autoImport';
+import cesium from 'vite-plugin-cesium';
+import { resolve } from 'path';
 
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
     AutoImportDeps(),
+    cesium(),
     federation({
       name: 'remote-package',
       filename: 'remoteEntry.js', //必须是js文件
@@ -17,6 +20,12 @@ export default defineConfig({
       shared: ['vue'],
     }),
   ],
+  resolve: {
+    alias: {
+      '@': resolve(__dirname, 'src'),
+    },
+  },
+
   build: {
     minify: false,
     target: 'esnext',

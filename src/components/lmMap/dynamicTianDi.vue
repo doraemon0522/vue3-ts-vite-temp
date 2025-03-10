@@ -16,11 +16,6 @@
   import layerJSON from './layerJson.json';
   import XYZ from 'ol/source/XYZ';
   import { Style, Fill, Stroke } from 'ol/style';
-  //  import {
-  //   Tile as TileLayer,
-  //   Vector as VectorLayer,
-  //   VectorTile as VectorTileLayer,
-  // } from 'ol/layer';
 
   const mapContainer = ref(null);
   let map;
@@ -62,17 +57,6 @@
     });
 
     map.addLayer(vectorTileLayer);
-    // const backgroundLayer = new TileLayer({
-    //   source: new XYZ({
-    //     url: 'https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-    //   }),
-    //   style: new Style({
-    //     fill: new Fill({
-    //       color: '#222222', // Dark background color
-    //     }),
-    //   }),
-    // });
-    // map.addLayer(backgroundLayer);
 
     // Apply Mapbox style
     applyStyle(vectorTileLayer, {
